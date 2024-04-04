@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:transitionName="img"
+        android:id="@+id/imageViewId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bangla" />
+
+    <TextView
+        android:transitionName="txt"
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewId"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Bangladesh National Flag"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonId"
+        android:transitionName="btn"
+        android:textSize="20sp"
+        android:text="Button"
+        android:textStyle="bold"
+        android:backgroundTint="#023C8C"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textViewId"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
